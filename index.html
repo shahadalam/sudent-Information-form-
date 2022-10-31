@@ -263,7 +263,7 @@ table {
 
 function reset(){
 
-    // document.querySelector('#StudentImage').value='';
+    // document.querySelector('#StudentListContainer').value='';
 
 
 };
@@ -336,7 +336,7 @@ const dis = document.getElementById("dis");
 
 const StudentPhoto = document.getElementById("StudentPhoto");
 const FName = document.getElementById("fName");
-const lName = document.getElementById("lName");
+const lName = document.getElementById("LName");
 const FatherName = document.getElementById("FatherName");
 const DateOfBirth = document.getElementById("DateOfBirth");
 const EmailID = document.getElementById("EmailID");
@@ -386,7 +386,7 @@ else{
   alert('Please fill all fields');
 }
   // this div will hold student records..
-  const StudentDisplay = document.getElementById("StudentListContainer");
+  const StudentDisplay = document.getElementById("");
 
   var record = document.createElement("div");
 
@@ -404,7 +404,7 @@ else{
   });
 
 
-  // appending these html inside StudentDisplay Area...
+  // appending these 
   StudentDisplay.appendChild(record);
  
   
@@ -468,7 +468,7 @@ function RemoveStudent(index) {
  document.getElementById("singleStudent").style.display = "none";
     localStorage.setItem("StudentList",JSON.stringify(StudentList));
     
-    // removing the last element from dom
+   
 }
 
 
