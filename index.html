@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Student Information JS PROJECT</title>
+    <title>JS PROJECT</title>
 
     <!-- bs css link -->
     <link
@@ -263,7 +263,7 @@ table {
 
 function reset(){
 
-    // document.querySelector('#StudentListContainer').value='';
+    // document.querySelector('#StudentImage').value='';
 
 
 };
@@ -336,7 +336,7 @@ const dis = document.getElementById("dis");
 
 const StudentPhoto = document.getElementById("StudentPhoto");
 const FName = document.getElementById("fName");
-const lName = document.getElementById("LName");
+const lName = document.getElementById("lName");
 const FatherName = document.getElementById("FatherName");
 const DateOfBirth = document.getElementById("DateOfBirth");
 const EmailID = document.getElementById("EmailID");
@@ -386,7 +386,7 @@ else{
   alert('Please fill all fields');
 }
   // this div will hold student records..
-  const StudentDisplay = document.getElementById("");
+  const StudentDisplay = document.getElementById("StudentListContainer");
 
   var record = document.createElement("div");
 
@@ -404,7 +404,7 @@ else{
   });
 
 
-  // appending these 
+  // appending these html inside StudentDisplay Area...
   StudentDisplay.appendChild(record);
  
   
@@ -468,7 +468,7 @@ function RemoveStudent(index) {
  document.getElementById("singleStudent").style.display = "none";
     localStorage.setItem("StudentList",JSON.stringify(StudentList));
     
-   
+    // removing the last element from dom
 }
 
 
